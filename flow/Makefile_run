@@ -1,0 +1,11 @@
+FOLDERS=(aes_final ethmac_final ibex_final jpeg_final riscv32i_final)
+FILES=(config_flute.mk config_hyb.mk config_hyb2.mk)
+
+for FOLDER in "${FOLDERS[@]}"; do
+	for FILE in "${FILES[@]}"; do
+		echo "make clean clean_all MYFOLDER=$FOLDER MYFILE=$FILE"
+		make clean clean_all MYFOLDER=$FOLDER MYFILE=$FILE
+		echo "make MYFOLDER=$FOLDER MYFILE=$FILE"
+		make MYFOLDER=$FOLDER MYFILE=$FILE
+	done
+done
