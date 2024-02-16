@@ -115,13 +115,12 @@
 # DESIGN_CONFIG = ./designs/asap7/jpeg_final/config_hyb.mk
 # DESIGN_CONFIG = ./designs/asap7/riscv32i_final/config_flute.mk
 # DESIGN_CONFIG = ./designs/asap7/riscv32i_final/config_hyb.mk
-DESIGN_CONFIG = ./designs/asap7/${MYFOLDER}/${MYFILE}
+# DESIGN_CONFIG = ./designs/asap7/${MYFOLDER}/${MYFILE}
 # DESIGN_CONFIG = ./designs/asap7/ethmac_final/config_hyb.mk
 # DESIGN_CONFIG = ./designs/asap7/ethmac_final/config_hyb2.mk
 # DESIGN_CONFIG = ./designs/asap7/ethmac_final/config_hyb3.mk
 # DESIGN_CONFIG = ./designs/asap7/ethmac_final/config_hybrest.mk
-
-
+DESIGN_CONFIG = ./designs/asap7/gcd/config.mk
 
 
 # Default TNS_END_PERCENT value
