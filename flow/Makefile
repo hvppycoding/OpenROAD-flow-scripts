@@ -102,10 +102,12 @@
 #DESIGN_CONFIG=./designs/ihp-sg13g2/riscv32i/config.mk
 
 # Default design
-# DESIGN_CONFIG ?= ./designs/nangate45/gcd/config.mk
+# DESIGN_CONFIG ?= ./designs/asap7/gcd/config.mk
 # DESIGN_CONFIG=./designs/asap7/aes_final/config_flute.mk
 # DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb.mk
 # DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb2.mk
+# DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb_rest.mk
+DESIGN_CONFIG = ./designs/asap7/aes_final/config_td.mk
 # DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb2_new.mk
 # DESIGN_CONFIG = ./designs/asap7/ibex_final/config_flute.mk
 # DESIGN_CONFIG = ./designs/asap7/ibex_final/config_hyb.mk
@@ -120,7 +122,11 @@
 # DESIGN_CONFIG = ./designs/asap7/ethmac_final/config_hyb2.mk
 # DESIGN_CONFIG = ./designs/asap7/ethmac_final/config_hyb3.mk
 # DESIGN_CONFIG = ./designs/asap7/ethmac_final/config_hybrest.mk
-DESIGN_CONFIG = ./designs/asap7/gcd/config.mk
+# DESIGN_CONFIG = ./designs/asap7/aes_final/config_default_alpha0.mk
+# DESIGN_CONFIG = ./designs/asap7/aes_final/config_default_alpha0p3.mk
+# DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb_alpha0p3.mk
+# DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb_alpha0.mk
+# DESIGN_CONFIG = ./designs/asap7/gcd/config_test.mk
 
 
 # Default TNS_END_PERCENT value
@@ -799,7 +805,7 @@ $(RESULTS_DIR)/5_route.v:
 clean_route:
 	rm -rf output*/ results*.out.dmp layer_*.mps
 	rm -rf *.gdid *.log *.met *.sav *.res.dmp
-	rm -rf $(RESULTS_DIR)/route.guide $(RESULTS_DIR)/output_guide.mod $(RESULTS_DIR)/updated_clks.sdc
+	rm -rf $(RESULTS_DIR)/route.guide $(RESULTS_DIR)/output_guide.mod $(RESULTS_DIR)/updated_clks.sdc $(RESULTS_DIR)/5_1_temp
 	rm -rf $(RESULTS_DIR)/5_*.odb $(RESULTS_DIR)/5_route.sdc $(RESULTS_DIR)/5_*.def $(RESULTS_DIR)/5_*.v
 	rm -f  $(REPORTS_DIR)/5_*
 	rm -f  $(LOG_DIR)/5_*
