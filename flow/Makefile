@@ -107,7 +107,9 @@
 # DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb.mk
 # DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb2.mk
 # DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb_rest.mk
-DESIGN_CONFIG = ./designs/asap7/aes_final/config_td.mk
+# DESIGN_CONFIG = ./designs/asap7/aes_final/config_td.mk
+DESIGN_CONFIG = ./designs/asap7/jpeg_final/config_td.mk
+# DESIGN_CONFIG = ./designs/asap7/jpeg_final/config_hyb_rest.mk
 # DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb2_new.mk
 # DESIGN_CONFIG = ./designs/asap7/ibex_final/config_flute.mk
 # DESIGN_CONFIG = ./designs/asap7/ibex_final/config_hyb.mk
