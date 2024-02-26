@@ -102,34 +102,7 @@
 #DESIGN_CONFIG=./designs/ihp-sg13g2/riscv32i/config.mk
 
 # Default design
-# DESIGN_CONFIG ?= ./designs/asap7/gcd/config.mk
-# DESIGN_CONFIG=./designs/asap7/aes_final/config_flute.mk
-# DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb.mk
-# DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb2.mk
-# DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb_rest.mk
-# DESIGN_CONFIG = ./designs/asap7/aes_final/config_td.mk
-DESIGN_CONFIG = ./designs/asap7/jpeg_final/config_td.mk
-# DESIGN_CONFIG = ./designs/asap7/jpeg_final/config_hyb_rest.mk
-# DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb2_new.mk
-# DESIGN_CONFIG = ./designs/asap7/ibex_final/config_flute.mk
-# DESIGN_CONFIG = ./designs/asap7/ibex_final/config_hyb.mk
-# DESIGN_CONFIG = ./designs/asap7/ibex_final/config_hyb2.mk
-# DESIGN_CONFIG = ./designs/asap7/ibex_final/config_hybrest.mk
-# DESIGN_CONFIG = ./designs/asap7/jpeg_final/config_flute.mk
-# DESIGN_CONFIG = ./designs/asap7/jpeg_final/config_hyb.mk
-# DESIGN_CONFIG = ./designs/asap7/riscv32i_final/config_flute.mk
-# DESIGN_CONFIG = ./designs/asap7/riscv32i_final/config_hyb.mk
-# DESIGN_CONFIG = ./designs/asap7/${MYFOLDER}/${MYFILE}
-# DESIGN_CONFIG = ./designs/asap7/ethmac_final/config_hyb.mk
-# DESIGN_CONFIG = ./designs/asap7/ethmac_final/config_hyb2.mk
-# DESIGN_CONFIG = ./designs/asap7/ethmac_final/config_hyb3.mk
-# DESIGN_CONFIG = ./designs/asap7/ethmac_final/config_hybrest.mk
-# DESIGN_CONFIG = ./designs/asap7/aes_final/config_default_alpha0.mk
-# DESIGN_CONFIG = ./designs/asap7/aes_final/config_default_alpha0p3.mk
-# DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb_alpha0p3.mk
-# DESIGN_CONFIG = ./designs/asap7/aes_final/config_hyb_alpha0.mk
-# DESIGN_CONFIG = ./designs/asap7/gcd/config_test.mk
-
+DESIGN_CONFIG = ./designs/asap7/$(MYFOLDER)/$(MYFILE)
 
 # Default TNS_END_PERCENT value
 export TNS_END_PERCENT ?=5
@@ -139,7 +112,7 @@ ifndef DISPLAY
 export QT_QPA_PLATFORM ?= offscreen
 endif
 
-# My custom settings
+# HVPPYCODING: custom settings
 export QT_QPA_PLATFORM = offscreen
 
 # ==============================================================================
