@@ -15,7 +15,7 @@ cd "$(dirname $(readlink -f $0))"
 NICE=""
 
 OPENROAD_APP_REMOTE="origin"
-OPENROAD_APP_BRANCH="master"
+OPENROAD_APP_BRANCH="BSCDN"
 
 INSTALL_PATH="$(pwd)/tools/install"
 
@@ -278,7 +278,8 @@ __update_openroad_app_latest()
 (
         cd tools/OpenROAD
         git fetch "${OPENROAD_APP_REMOTE}"
-        git checkout "${OPENROAD_APP_REMOTE}/${OPENROAD_APP_BRANCH}"
+        # git checkout "${OPENROAD_APP_REMOTE}/${OPENROAD_APP_BRANCH}"
+        git checkout ${OPENROAD_APP_BRANCH}
         git pull "${OPENROAD_APP_REMOTE}" "${OPENROAD_APP_BRANCH}"
         git submodule update --init --recursive
 )
