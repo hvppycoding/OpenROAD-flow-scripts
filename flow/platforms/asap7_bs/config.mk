@@ -1,4 +1,4 @@
-export PLATFORM                = asap7
+export PLATFORM                = asap7_bs
 export PROCESS                 = 7
 
 ifeq ($(LIB_MODEL),)
@@ -105,6 +105,7 @@ export MAKE_TRACKS             = $(PLATFORM_DIR)/openRoad/make_tracks.tcl
 # Define default PDN config
 ifeq ($(BLOCKS),)
    export PDN_TCL ?= $(PLATFORM_DIR)/openRoad/pdn/grid_strategy-M1-M2-M5-M6.tcl
+   # export PDN_TCL ?= $(PLATFORM_DIR)/openRoad/pdn/grid_strategy-M1-BPR-BSM1-BSM2.tcl
 else
    export PDN_TCL ?= $(PLATFORM_DIR)/openRoad/pdn/BLOCKS_grid_strategy.tcl
 endif
@@ -141,7 +142,7 @@ export TAP_CELL_NAME           = TAPCELL_ASAP7_75t_R
 export SET_RC_TCL              = $(PLATFORM_DIR)/setRC.tcl
 
 # Route options
-export MIN_ROUTING_LAYER       ?= M2
+export MIN_ROUTING_LAYER       ?= BSM2
 #export MIN_CLOCK_ROUTING_LAYER = M4
 export MAX_ROUTING_LAYER       ?= M7
 
@@ -152,7 +153,7 @@ export KLAYOUT_TECH_FILE       = $(PLATFORM_DIR)/KLayout/asap7.lyt
 export KLAYOUT_DRC_FILE = $(PLATFORM_DIR)/drc/asap7.lydrc
 
 # OpenRCX extRules
-export RCX_RULES               = $(PLATFORM_DIR)/rcx_patterns.rules
+# export RCX_RULES               = $(PLATFORM_DIR)/rcx_patterns.rules
 
 # XS - defining function for using LVT
 ifeq ($(ASAP7_USELVT), 1)
