@@ -104,11 +104,13 @@ export MAKE_TRACKS             = $(PLATFORM_DIR)/openRoad/make_tracks.tcl
 
 # Define default PDN config
 ifeq ($(BLOCKS),)
-   export PDN_TCL ?= $(PLATFORM_DIR)/openRoad/pdn/grid_strategy-M1-M2-M5-M6.tcl
-   # export PDN_TCL ?= $(PLATFORM_DIR)/openRoad/pdn/grid_strategy-M1-BPR-BSM1-BSM2.tcl
+   # export PDN_TCL ?= $(PLATFORM_DIR)/openRoad/pdn/grid_strategy-M1-M2-M5-M6.tcl
+   export PDN_TCL ?= $(PLATFORM_DIR)/openRoad/pdn/grid_strategy-M1-BPR-BSM1-BSM2.tcl
 else
    export PDN_TCL ?= $(PLATFORM_DIR)/openRoad/pdn/BLOCKS_grid_strategy.tcl
 endif
+
+export FASTROUTE_TCL           = $(PLATFORM_DIR)/openRoad/fastroute.tcl
 
 
 # IO Placer pin layers

@@ -17,5 +17,6 @@ make_tracks M2  -x_offset 0.009 -x_pitch 0.036 -y_offset 0.270 -y_pitch 0.270
 
 make_tracks M1  -x_offset 0.009 -x_pitch 0.036 -y_offset 0.009 -y_pitch 0.036
 
+make_tracks BPR  -x_offset 0.009 -x_pitch 0.036 -y_offset 0.009 -y_pitch 0.036
 make_tracks BSM1 -x_offset 0.012 -x_pitch 0.048 -y_offset 0.012 -y_pitch 0.048
 make_tracks BSM2 -x_offset 0.012 -x_pitch 0.048 -y_offset 0.016 -y_pitch 0.064
